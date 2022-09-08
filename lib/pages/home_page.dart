@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
 
-class  HomePage extends StatelessWidget {
+class  HomePage extends StatefulWidget {
   
 
+
+  HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
    int days = 30;
+
     String a = "to my home";
 
   @override
@@ -18,6 +27,7 @@ class  HomePage extends StatelessWidget {
           ),
         ),
         drawer: Drawer(),
+        
       );
   }
 }
