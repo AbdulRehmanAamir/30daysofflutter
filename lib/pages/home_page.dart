@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-class  HomePage extends StatefulWidget {
-  
-
-
+class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
   @override
@@ -11,23 +8,24 @@ class  HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-   int days = 30;
-
-    String a = "to my home";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("CatalogApp"),
       ),
-        body: Center(
-          child: Container(
-            child: Text("hey $days $a"),
+      body: Center(
+        child: Container(
+          child: Text(
+            "Welcome to MyApp",
+            style: TextStyle(
+              fontSize: 40,
+              color: Colors.teal,
+            ),
           ),
         ),
-        drawer: Drawer(),
-        
-      );
+      ),
+      drawer: Drawer(),
+    );
   }
 }
